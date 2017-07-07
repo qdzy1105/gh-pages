@@ -1,0 +1,268 @@
+@import "wjs-font.less";
+.wjs-view{}
+// 头部工具条
+.top-tool{
+   .row{
+       >div{
+           
+           border-left:1px solid #000;
+           border-bottom:1px solid #000;
+           height:50px;
+           line-height: 50px;
+           text-align: center; 
+           a{
+            color:#808080;
+           }
+           .btn-danger{
+               color:#fff;
+           }
+       }
+       >div:nth-of-type(1){
+            border-left:none;
+       }
+   }
+}
+// 导航条
+.wjs-nav{
+    .navbar-header{
+        height:80px;
+    }
+    .navbar{
+        margin-bottom: 0;
+    }
+    .navbar-brand{
+        line-height: 80px;
+        padding-top:5px;
+        font-size: 70px;
+        .wjsfont-logo{
+            color:red;
+        }
+        
+    }
+    .navbar-collapse{
+        a{
+            padding-top:0;
+            padding-bottom:0;
+            line-height: 80px;
+            &:hover,&:focus{
+            border-bottom:1px solid red;
+        }
+        }
+    }
+}
+// 轮播图
+.carousel{
+    img{
+        width:100%;
+    }
+}
+// 支付交易保障
+.exchange{
+    margin-bottom: 60px;
+    .row>div{
+        padding-top:30px;
+    }
+    a{
+        color:#808080;
+        .media{
+            .media-left{
+                font-size: 40px;
+            }
+            .media-right{
+                h4{
+                    font-size:22px;
+                }
+            }
+        }
+    }
+}
+// 正在排队
+.wjs-waiting{
+    height:80px;
+    padding:30px 0px;
+    border-top:1px solid #000;
+    border-bottom:1px solid #000;
+    .pull-left{
+        a{
+             color:red;
+            border-bottom:1px dashed red;
+        }
+    }
+}
+// 微投资
+.wjs-buy{
+    // 灰色
+    .card-default{
+        margin-top:20px;     
+        .card-a{
+            color:#808080;
+            display: block;
+            box-shadow: 1px 1px 1px 1px #ccc,-1px -1px 1px 1px #ccc;
+            padding-right:80px;
+            position: relative;
+            &:hover{
+                color:red;
+            }
+            .card-content{
+                padding-top:25px;
+                padding:25px 5px 0px 5px;
+                h4{
+                    text-align: center;
+                    font-size: 20px;
+                }
+                .pull-right{
+                    text-align: right;
+                }
+            }
+            .card-rate{
+                position:absolute;
+                right:0;
+                top:0;
+                width:80px;
+                height:100%;
+                border-left:1px dashed #000;
+                padding-top:60px;
+                text-align: center;
+                &:before,&:after{
+                    content:"";
+                    display: "block";
+                    height:20px;
+                    width:20px;
+                    background: #fff;
+                    position:absolute;
+                    left:0;
+                    // top:0;
+                    border-radius:50%;
+                    // transform: translate(-50%,-50%);
+                }
+                 &:before{
+                     top:0;
+                     transform: translate(-50%,-50%);
+                     box-shadow: 0px 1px 1px 1px #ccc;
+                 }
+                 &:after{
+
+                     bottom:0;
+                     transform: translate(-50%,50%);
+                     box-shadow: 0px -1px 1px 1px #ccc;
+                 }
+            }
+        }
+    }
+    .card-red{
+        .card-a{
+            background: red;
+            color:#fff;
+            &:hover{
+                color:#000;
+            }
+            .card-content{
+                position:relative;
+                span{
+                    position:absolute;
+                    left:0;
+                    top:0;
+                    font-size: 40px;
+                }
+            }
+            .cart-rate{
+                border: 1px dashed #fff;
+            }
+        }
+
+    }
+    .card-progress{
+        .card-a{
+            .card-content{
+                .pull-right{
+                    width:50%;
+                }
+            }
+            .card-rate{
+                span:nth-of-type(1){
+                    color:green;
+                    border: 1px solid green;
+                    margin-right:5px;
+                }
+                span:nth-of-type(2){
+                    color:red;
+                    border: 1px solid red;
+                }
+            }
+        }
+    }
+
+}
+// 新闻
+.news{
+   .all-news{
+       font-size: 30px;
+       border-bottom: 1px solid #000;
+       position:relative;
+       &:before{
+           content:"";
+           display: block;
+           height:10px;
+           width:10px;
+           border-radius: 50%;
+           border:1px solid #000;
+           position:absolute;
+           right:0px;
+           bottom:-5px;
+           background: #fff;
+       }
+   } 
+   .news-list{
+       .line{
+           height:400px;
+           border-right:1px dashed #000;
+           position:absolute;
+           left:90px;
+       }
+       ul{
+           list-style: none;
+           li{
+              a{
+                  display: block;
+                  height:70px;
+                  width:70px;
+                  background: #ccc;
+                  border-radius:50%;
+                  padding-top:10px;
+                  padding-left:10px;
+                  margin-bottom:60px;
+                  position: relative;
+                  z-index: 5;
+                  span{
+                      font-size: 50px;
+                      color:#fff;
+                  }
+              }
+           }
+       }
+   }
+}
+// 底部
+.footer{
+    // padding-top:30px;
+    p{
+        margin-top:50px;
+        font-size: 30px;
+        text-align: center;
+    }
+    .container{
+        ul{
+            list-style: none;
+            li{
+                float:left;
+                 margin-left:30px;
+                span{
+                    font-size:80px;
+                    color:red;
+                }
+               
+            }
+        }
+    }
+
+}

@@ -1,0 +1,292 @@
+/* 导入 字体文件 */
+@font-face {
+  font-family: 'wjsfont';
+  src: url('../font/MiFie-Web-Font.eot');
+  src: url('../font/MiFie-Web-Font.eot?#iefix') format('embedded-opentype'), url('../font/MiFie-Web-Font.woff') format('woff'), url('font/MiFie-Web-Font.ttf') format('truetype'), url('../font/MiFie-Web-Font.svg') format('svg');
+}
+/* 定义 使用的class */
+.wjsfont {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'wjsfont';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+}
+.wjsfont-logo::before {
+  content: '\e920';
+}
+.wjsfont-name::before {
+  content: '\e921';
+}
+.wjsfont-e903::before {
+  content: '\e903';
+}
+.wjsfont-e901::before {
+  content: '\e901';
+}
+.wjsfont-e904::before {
+  content: '\e904';
+}
+.wjsfont-e905::before {
+  content: '\e905';
+}
+.wjsfont-e902::before {
+  content: '\e902';
+}
+/* 添加 产品列表的 文字样式 */
+.wjsfont-e915::before {
+  content: '\e915';
+}
+.wjsfont-new01::before {
+  content: "\e90e";
+}
+.wjsfont-new02::before {
+  content: "\e90f";
+}
+.wjsfont-new03::before {
+  content: "\e910";
+}
+.wjsfont-new04::before {
+  content: "\e911";
+}
+/* 网页 最下方的 合作单位 */
+.wjsfont-partner01::before {
+  content: "\e946";
+}
+.wjsfont-partner02::before {
+  content: "\e92f";
+}
+.wjsfont-partner03::before {
+  content: "\e92e";
+}
+.wjsfont-partner04::before {
+  content: "\e92a";
+}
+.wjsfont-partner05::before {
+  content: "\e929";
+}
+.wjsfont-partner06::before {
+  content: "\e931";
+}
+.wjsfont-partner07::before {
+  content: "\e92c";
+}
+.wjsfont-partner08::before {
+  content: "\e92b";
+}
+.wjsfont-partner09::before {
+  content: "\e92d";
+}
+.top-tool .row > div {
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+.top-tool .row > div a {
+  color: #808080;
+}
+.top-tool .row > div .btn-danger {
+  color: #fff;
+}
+.top-tool .row > div:nth-of-type(1) {
+  border-left: none;
+}
+.wjs-nav .navbar-header {
+  height: 80px;
+}
+.wjs-nav .navbar {
+  margin-bottom: 0;
+}
+.wjs-nav .navbar-brand {
+  line-height: 80px;
+  padding-top: 5px;
+  font-size: 70px;
+}
+.wjs-nav .navbar-brand .wjsfont-logo {
+  color: red;
+}
+.wjs-nav .navbar-collapse a {
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 80px;
+}
+.wjs-nav .navbar-collapse a:hover,
+.wjs-nav .navbar-collapse a:focus {
+  border-bottom: 1px solid red;
+}
+.carousel img {
+  width: 100%;
+}
+.exchange {
+  margin-bottom: 60px;
+}
+.exchange .row > div {
+  padding-top: 30px;
+}
+.exchange a {
+  color: #808080;
+}
+.exchange a .media .media-left {
+  font-size: 40px;
+}
+.exchange a .media .media-right h4 {
+  font-size: 22px;
+}
+.wjs-waiting {
+  height: 80px;
+  padding: 30px 0px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.wjs-waiting .pull-left a {
+  color: red;
+  border-bottom: 1px dashed red;
+}
+.wjs-buy .card-default {
+  margin-top: 20px;
+}
+.wjs-buy .card-default .card-a {
+  color: #808080;
+  display: block;
+  box-shadow: 1px 1px 1px 1px #ccc, -1px -1px 1px 1px #ccc;
+  padding-right: 80px;
+  position: relative;
+}
+.wjs-buy .card-default .card-a:hover {
+  color: red;
+}
+.wjs-buy .card-default .card-a .card-content {
+  padding-top: 25px;
+  padding: 25px 5px 0px 5px;
+}
+.wjs-buy .card-default .card-a .card-content h4 {
+  text-align: center;
+  font-size: 20px;
+}
+.wjs-buy .card-default .card-a .card-content .pull-right {
+  text-align: right;
+}
+.wjs-buy .card-default .card-a .card-rate {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  border-left: 1px dashed #000;
+  padding-top: 60px;
+  text-align: center;
+}
+.wjs-buy .card-default .card-a .card-rate:before,
+.wjs-buy .card-default .card-a .card-rate:after {
+  content: "";
+  display: "block";
+  height: 20px;
+  width: 20px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  border-radius: 50%;
+}
+.wjs-buy .card-default .card-a .card-rate:before {
+  top: 0;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 1px 1px 1px #ccc;
+}
+.wjs-buy .card-default .card-a .card-rate:after {
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  box-shadow: 0px -1px 1px 1px #ccc;
+}
+.wjs-buy .card-red .card-a {
+  background: red;
+  color: #fff;
+}
+.wjs-buy .card-red .card-a:hover {
+  color: #000;
+}
+.wjs-buy .card-red .card-a .card-content {
+  position: relative;
+}
+.wjs-buy .card-red .card-a .card-content span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 40px;
+}
+.wjs-buy .card-red .card-a .cart-rate {
+  border: 1px dashed #fff;
+}
+.wjs-buy .card-progress .card-a .card-content .pull-right {
+  width: 50%;
+}
+.wjs-buy .card-progress .card-a .card-rate span:nth-of-type(1) {
+  color: green;
+  border: 1px solid green;
+  margin-right: 5px;
+}
+.wjs-buy .card-progress .card-a .card-rate span:nth-of-type(2) {
+  color: red;
+  border: 1px solid red;
+}
+.news .all-news {
+  font-size: 30px;
+  border-bottom: 1px solid #000;
+  position: relative;
+}
+.news .all-news:before {
+  content: "";
+  display: block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  position: absolute;
+  right: 0px;
+  bottom: -5px;
+  background: #fff;
+}
+.news .news-list .line {
+  height: 400px;
+  border-right: 1px dashed #000;
+  position: absolute;
+  left: 90px;
+}
+.news .news-list ul {
+  list-style: none;
+}
+.news .news-list ul li a {
+  display: block;
+  height: 70px;
+  width: 70px;
+  background: #ccc;
+  border-radius: 50%;
+  padding-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 5;
+}
+.news .news-list ul li a span {
+  font-size: 50px;
+  color: #fff;
+}
+.footer p {
+  margin-top: 50px;
+  font-size: 30px;
+  text-align: center;
+}
+.footer .container ul {
+  list-style: none;
+}
+.footer .container ul li {
+  float: left;
+  margin-left: 30px;
+}
+.footer .container ul li span {
+  font-size: 80px;
+  color: red;
+}
